@@ -8,7 +8,7 @@ Results of the ColBERT PRF models as well as the baselines reported in the paper
 res = pt.io.read_results("/path/to/resfile/BM25.2019.res.gz")
 evalMeasuresDict = pt.Utils.evaluate(res,qrels,metrics=["map","recip_rank","recall_1000"])
 print(evalMeasuresDict)
-```python
+```
 
 
 # Reference
