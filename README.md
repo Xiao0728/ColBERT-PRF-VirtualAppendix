@@ -12,7 +12,7 @@ dataset = pt.get_dataset("trec-deep-learning-passages")
 res = pt.io.read_results("/path/to/resfile/BM25.2019.res.gz")
 evalMeasuresDict = pt.Utils.evaluate(
   res,
-  dataset.get_qrels("2019"), 
+  dataset.get_qrels("test-2019"), 
   metrics=[ AP(rel=2)@1000, nDCG@10, RR(rel=2)@10 ]
 )
 print(evalMeasuresDict)
