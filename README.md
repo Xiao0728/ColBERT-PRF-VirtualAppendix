@@ -5,12 +5,16 @@ This repository is the Virtual Appendix for our ICTIR 2021 paper  "Pseudo-Releva
 The implementation of ColBERT PRF is available from our [PyTerrier ColBERT plugin](https://github.com/terrierteam/pyterrier_colbert).
 
 ## Usage
-Results of the ColBERT PRF models as well as the baselines reported in the paper can be reproduced using [PyTerrier](https://github.com/terrier-org/pyterrier) :
+Results of the ColBERT PRF models as well as the baselines reported in the paper can be reproduced using [PyTerrier](https://github.com/terrier-org/pyterrier):
 ```python
 from pyterrier.measures import *
 dataset = pt.get_dataset("trec-deep-learning-passages")
 res = pt.io.read_results("/path/to/resfile/BM25.2019.res.gz")
-evalMeasuresDict = pt.Utils.evaluate(res,dataset.get_qrels("2019", metrics=[ AP(rel=2)@1000, nDCG@10, RR(rel=2)@10 ])
+evalMeasuresDict = pt.Utils.evaluate(
+  res,
+  dataset.get_qrels("2019"), 
+  metrics=[ AP(rel=2)@1000, nDCG@10, RR(rel=2)@10 ]
+)
 print(evalMeasuresDict)
 ```
 
