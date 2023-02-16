@@ -22,4 +22,4 @@ print(evalMeasuresDict)
 ## References
   - [Macdonald20]: Craig Macdonald, Nicola Tonellotto. Declarative Experimentation inInformation Retrieval using PyTerrier. Craig Macdonald and Nicola Tonellotto. In Proceedings of ICTIR 2020. https://arxiv.org/abs/2007.14271
  - [Wang21]: Xiao Wang, Craig Macdonald, Nicola Tonellotto, Iadh Ounis. Pseudo-Relevance Feedback for Multiple Representation Dense Retrieval. In Proceedings of ICTIR 2021. https://arxiv.org/abs/2106.11251
- - [Wang23]: Wang, X., Macdonald, C., Tonellotto, N. and Ounis, I., 2023. ColBERT-PRF: Semantic Pseudo-Relevance Feedback for Dense Passage and Document Retrieval. ACM Transactions on the Web, 17(1), pp.1-39. https://dl.acm.org/doi/full/10.1145/3572405
+ - [Wang23]: Xiao Wang, Craig Macdonald, Nicola Tonellotto, Iadh Ounis. ColBERT-PRF: Semantic Pseudo-Relevance Feedback for Dense Passage and Document Retrieval. ACM Transactions on the Web. https://dl.acm.org/doi/full/10.1145/3572405
